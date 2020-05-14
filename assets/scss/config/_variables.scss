@@ -1,0 +1,37 @@
+//brakpoints
+$breakpoints: (
+    mobile: 360px,
+    tablet: 640px,
+    desktop: 1024px
+);
+
+
+
+//paleta de colores
+:root {
+    //primary 
+    --color-primary-cyan: hsl(179,62%,43%);
+    --color-primary-bright-yellow: hsl(71,73%,54%);
+    //neutral
+    --color-neutral-light-gray: hsl(204, 43%, 93%);
+    --color-neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+
+//typografia
+:root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --body-font-size: .9rem;
+    --small-font-size: .75rem;
+
+    //desktop
+    @include mq(desktop) {
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.5rem;
+        --body-font-size: 1rem;
+        --small-font-size: .8rem;
+    }
+
+}

@@ -2,43 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+  <!-- header -->
+  <header class="main-header">
+    <h1 class="main-header__title">Join Our community</h1>
+    <h2 class="main-header__subtitle">30-day, hassle-free money back guarantee</h2>
+    <p class="main-header__text">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills</p>
+  </header>
+  <!-- main -->
+  <main class="main-card">
+    <div class="card--subscription">
+      <h2 class="card__title">Monthly Subscription</h2>
+      <p class="card__price">$29 <span>per month</span></p>
+      <p class="card__text--subscription">Full access for less than $1 a day</p>
+    </div>
+    <div class="card--about">
+      <h2 class="card__title">Why us</h2>
+      <p class="card--about__text">Tutorials by industry experts</p>
+      <p class="card--about__text">Peer & expert code review</p>
+      <p class="card--about__text">Coding exercises</p>
+      <p class="card--about__text">Access to our GitHub repos</p>
+      <p class="card--about__text">community forum</p>
+      <p class="card--about__text">Flashcard decks</p>
+      <p class="card--about__text">New videos every week</p>
+    </div>
+  </main>
   
   <footer>
     <p class="attribution">
