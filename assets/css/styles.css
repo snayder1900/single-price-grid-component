@@ -1,5 +1,6 @@
 :root {
   --color-primary-cyan: hsl(179,62%,43%);
+  --color-secondary-cyan: hsl(179,40%,60%);
   --color-primary-bright-yellow: hsl(71,73%,54%);
   --color-neutral-light-gray: hsl(204, 43%, 93%);
   --color-neutral-grayish-blue: hsl(218, 22%, 67%); }
@@ -39,3 +40,73 @@ a {
 
 img {
   max-width: 100%; }
+
+.main-header__title {
+  color: var(--color-primary-cyan); }
+
+.main-header__subtitle {
+  color: var(--color-primary-bright-yellow); }
+
+.main-header__text {
+  color: var(--color-neutral-grayish-blue); }
+
+.card__text--subscription {
+  color: var(--color-neutral-light-gray); }
+
+.main-card {
+  padding: 1rem; }
+
+.card--subscription {
+  background-color: var(--color-primary-cyan); }
+
+.card__title {
+  color: var(--color-neutral-light-gray); }
+
+.card__price {
+  color: var(--color-neutral-light-gray);
+  font-size: var(--h1-font-size); }
+  .card__price span {
+    font-size: var(--body-font-size);
+    opacity: .5; }
+
+.card--about {
+  background-color: var(--color-secondary-cyan); }
+
+.card--about__text {
+  color: var(--color-neutral-light-gray); }
+
+.l-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw; }
+
+.center-content {
+  text-align: center; }
+
+.main-header {
+  margin: 1.2rem; }
+
+.main-card {
+  padding: 0; }
+
+.card--subscription {
+  padding: 1rem; }
+
+.card__price {
+  margin-top: 1rem;
+  margin-bottom: .8rem; }
+
+.card__text--subscription {
+  margin-bottom: 2.2rem; }
+
+.card--about {
+  padding: 1rem; }
+
+.card__button {
+  background-color: var(--color-primary-bright-yellow);
+  color: var(--color-neutral-light-gray);
+  height: 3rem;
+  width: 80%;
+  border: 0;
+  border-radius: .25rem;
+  cursor: pointer; }

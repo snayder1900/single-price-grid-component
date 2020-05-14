@@ -1,0 +1,43 @@
+//header
+.main-header__title {
+    color: var(--color-primary-cyan);
+}
+.main-header__subtitle {
+    color: var(--color-primary-bright-yellow);
+}
+.main-header__text {
+    color: var(--color-neutral-grayish-blue);
+}
+.card__text--subscription {
+    color: var(--color-neutral-light-gray);
+}
+
+//main-card
+.main-card {
+    
+    padding: 1rem;
+}
+.card--subscription {
+    background-color: var(--color-primary-cyan);
+}
+.card__title{
+    color: var(--color-neutral-light-gray);
+}
+.card__price {
+    color: var(--color-neutral-light-gray);
+    font-size: var(--h1-font-size);
+
+    span {
+        font-size: var(--body-font-size);
+        opacity: .5;
+    }
+}
+
+
+
+.card--about {
+    background-color: var(--color-secondary-cyan);
+}
+.card--about__text {
+    color: var(--color-neutral-light-gray);
+}
