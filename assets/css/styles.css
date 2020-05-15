@@ -8,7 +8,8 @@
 :root {
   --h1-font-size: 2rem;
   --h2-font-size: 1.5rem;
-  --body-font-size: .9rem;
+  --h3-font-size: 1.2rem
+    --body-font-size: .9rem;
   --small-font-size: .75rem; }
   @media screen and (min-width: 1024px) {
     :root {
@@ -42,16 +43,16 @@ img {
   max-width: 100%; }
 
 .main-header__title {
-  color: var(--color-primary-cyan); }
+  color: var(--color-primary-cyan);
+  font-size: var(--h2-font-size); }
 
 .main-header__subtitle {
-  color: var(--color-primary-bright-yellow); }
+  color: var(--color-primary-bright-yellow);
+  font-size: var(--h3-font-size); }
 
 .main-header__text {
-  color: var(--color-neutral-grayish-blue); }
-
-.card__text--subscription {
-  color: var(--color-neutral-light-gray); }
+  color: var(--color-neutral-grayish-blue);
+  font-size: var(--h3-font-size); }
 
 .main-card {
   padding: 1rem; }
@@ -59,14 +60,18 @@ img {
 .card--subscription {
   background-color: var(--color-primary-cyan); }
 
+.card__text--subscription {
+  color: var(--color-neutral-light-gray); }
+
 .card__title {
   color: var(--color-neutral-light-gray); }
 
 .card__price {
   color: var(--color-neutral-light-gray);
-  font-size: var(--h1-font-size); }
+  font-size: var(--h1-font-size);
+  font-weight: bold; }
   .card__price span {
-    font-size: var(--body-font-size);
+    font-size: initial;
     opacity: .5; }
 
 .card--about {
@@ -85,6 +90,9 @@ img {
 
 .main-header {
   margin: 1.2rem; }
+  .main-header__text {
+    margin-bottom: 2.2rem;
+    line-height: 1.5; }
 
 .main-card {
   padding: 0; }
@@ -94,13 +102,28 @@ img {
 
 .card__price {
   margin-top: 1rem;
-  margin-bottom: .8rem; }
+  margin-bottom: .8rem;
+  display: flex;
+  align-items: center; }
+  .card__price span {
+    padding-left: 1rem; }
 
 .card__text--subscription {
-  margin-bottom: 2.2rem; }
+  margin-bottom: 2rem; }
+
+.card__button {
+  margin-bottom: .7rem; }
 
 .card--about {
   padding: 1rem; }
+
+.card--about__text {
+  margin-top: .3rem;
+  margin-bottom: .3rem; }
+
+.button-container {
+  display: flex;
+  justify-content: center; }
 
 .card__button {
   background-color: var(--color-primary-bright-yellow);
@@ -109,4 +132,5 @@ img {
   width: 80%;
   border: 0;
   border-radius: .25rem;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bold; }

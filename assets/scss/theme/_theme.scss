@@ -1,16 +1,17 @@
 //header
 .main-header__title {
     color: var(--color-primary-cyan);
+    font-size: var(--h2-font-size);
 }
 .main-header__subtitle {
     color: var(--color-primary-bright-yellow);
+    font-size: var(--h3-font-size);
 }
 .main-header__text {
     color: var(--color-neutral-grayish-blue);
+    font-size: var(--h3-font-size);
 }
-.card__text--subscription {
-    color: var(--color-neutral-light-gray);
-}
+
 
 //main-card
 .main-card {
@@ -20,15 +21,20 @@
 .card--subscription {
     background-color: var(--color-primary-cyan);
 }
+.card__text--subscription {
+    color: var(--color-neutral-light-gray);
+}
 .card__title{
     color: var(--color-neutral-light-gray);
 }
 .card__price {
     color: var(--color-neutral-light-gray);
     font-size: var(--h1-font-size);
+    font-weight: bold;
+    
 
     span {
-        font-size: var(--body-font-size);
+        font-size: initial;
         opacity: .5;
     }
 }
