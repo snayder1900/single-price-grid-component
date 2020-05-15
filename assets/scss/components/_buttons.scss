@@ -11,4 +11,8 @@
     border-radius: .25rem;
     cursor: pointer;
     font-weight: bold;
+
+    &:hover {
+        background-color: hsl(71,60%,70%);
+    }
 }

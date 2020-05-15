@@ -96,9 +96,16 @@ img {
 
 .main-card {
   padding: 0; }
+  @media screen and (min-width: 1024px) {
+    .main-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
 
 .card--subscription {
   padding: 1rem; }
+  @media screen and (min-width: 1024px) {
+    .card--subscription {
+      padding: 2.5rem; } }
 
 .card__price {
   margin-top: 1rem;
@@ -116,6 +123,9 @@ img {
 
 .card--about {
   padding: 1rem; }
+  @media screen and (min-width: 1024px) {
+    .card--about {
+      padding: 2.5rem; } }
 
 .card--about__text {
   margin-top: .3rem;
@@ -134,3 +144,5 @@ img {
   border-radius: .25rem;
   cursor: pointer;
   font-weight: bold; }
+  .card__button:hover {
+    background-color: #d0e085; }

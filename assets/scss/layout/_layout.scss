@@ -19,12 +19,19 @@
 //main-card
 .main-card {
     padding: 0;
+
+    @include mq(desktop) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        // grid-template-rows: 1fr;
+    }
 }
 .card--subscription {
     padding: 1rem;
-}
-.card__title {
-    
+
+    @include mq(desktop) {
+        padding: 2.5rem;
+    }
 }
 .card__price {
     margin-top: 1rem;
@@ -44,6 +51,10 @@
 }
 .card--about {
     padding: 1rem;
+
+    @include mq(desktop) {
+        padding: 2.5rem;
+    }
 }
 .card--about__text {
     margin-top: .3rem;
